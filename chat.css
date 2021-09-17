@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,#ff9e9e,#ff5252);
+    overflow:hidden;
+}
+
+.chatbot-container{
+    border:0.1px solid #696868; 
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.message-display{
+    width: auto;
+    height: 500px;
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+}
+
+.message-write{
+    width: auto;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.text-area{
+    width: 600px;
+    height: 67px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-buttons{
+    width: 270px;
+    height: 67px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.send-buttons button{
+    width: 110px;
+}
+
+.text-area textarea{
+    width: 550px;
+    outline: none;
+    resize: none;
+    border:1px solid #696868;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.userMessage{
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.showMessageUserAndTime{
+    width: 350px;
+    height: auto;
+    margin: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userMessageContainer{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    background:linear-gradient(to right,purple,#d54aff);
+}
+
+.userMessageContainer p{
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.userTime{
+    width: 300px;
+    height: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userTime p{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.agentMessage{
+    height: auto;
+    display: flex;
+}
+
+.showMessageAgentAndTime{
+    width: 350px;
+    height: auto;
+    margin: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.agentMessageContainer{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(to right,#969696,#c9c3c3);
+}
+
+
+.agentMessageContainer p{
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.agentTime{
+    width: 300px;
+    height: 20px;
+    margin: 5px;
+}
+
+.agentTime p{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+.logoUser{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 2px;
+    background: url("user.png");
+    background-size: cover;
+}
+
+.logoAgent{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 2px;
+    background: url("agent.jpg");
+    background-size: cover;
+}
+
+hr{
+    color: white;
+}
+
+
+@media (min-width:474px) and (max-width:622px)
+{
+    .chatbot-container{
+        width: 500px;
+    }
+    .text-area textarea{
+        width: 400px;
+    }
+    .send-buttons{
+        margin-left: 30px;
+    }
+}
+
+@media (min-width:374px) and (max-width:474px)
+{
+    .chatbot-container{
+        width: 450px;
+    }
+    .text-area textarea{
+        width: 350px;
+    }
+    .logoUser{
+        width: 30px;
+        height: 30px;
+    }
+    .logoAgent{
+        width: 30px;
+        height: 30px;
+    }
+    .message-display{
+        margin-right: 25px;
+    }
+    .send-buttons{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:373px){
+    .chatbot-container{
+        width: 500px;
+        position: absolute;
+        left:20px
+    }
+    .text-area textarea{
+        width: 370px;
+    }
+}
